@@ -5,6 +5,7 @@ const enbutton = document.getElementById("enbutton");
 const ptbutton = document.getElementById("ptbutton");
 const esbutton = document.getElementById("esbutton");
 const confirmbutton = document.getElementById("confirmbutton");
+const subtitle = document.getElementById("subtitle");
 
 let lang = "en";
 
@@ -26,6 +27,7 @@ esbutton.addEventListener("click", function() {
 });
 
 start.addEventListener("click", function () {
+  subtitle.textContent = "Select difficulty:";
   if(lang === "en") {
     menu.innerHTML = `
     <button id = "easy">EASY</button>
