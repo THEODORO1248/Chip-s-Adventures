@@ -125,4 +125,7 @@ start.addEventListener("click", function () {
     }
     confirmbutton.style.display = "inline-block";
   });
+  confirmbutton.addEventListener("click", function() {
+    infoaboutdificulties.innerHTML = ``;
+  });
 });
