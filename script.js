@@ -125,5 +125,4 @@ start.addEventListener("click", function () {
     }
     confirmbutton.style.display = "inline-block";
   });
-  
 });
