@@ -13,20 +13,30 @@ confirmbutton.style.display = "none";
 
 ptbutton.addEventListener("click", function() {
   start.textContent = "COMEÇAR";
+  subtitle.textContent = "selecione o idioma:"
   lang = "ptbr";
 });
 
 enbutton.addEventListener("click", function() {
   start.textContent = "START";
+  subtitle.textContent = "Select language:";
   lang = "en";
 });
 
 esbutton.addEventListener("click", function() {
   start.textContent = "EMPEZAR";
+  subtitle.textContent = "Selecciona el idioma:";
   lang = "es";
 });
 
 start.addEventListener("click", function () {
+  if(lang === "en") {
+    subtitle.textContent = "Select difficulty:";
+  } else if(lang === "ptbr") {
+    subtitle.textContent = "Selecione a dificuldade:";
+  } else {
+    subtitle.textContent = "Selecciona la dificultad:";
+  }
   subtitle.textContent = "Select difficulty:";
   if(lang === "en") {
     menu.innerHTML = `
