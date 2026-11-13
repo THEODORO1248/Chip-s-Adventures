@@ -37,7 +37,6 @@ start.addEventListener("click", function () {
   } else {
     subtitle.textContent = "Selecciona la dificultad:";
   }
-  subtitle.textContent = "Select difficulty:";
   if(lang === "en") {
     menu.innerHTML = `
     <button id = "easy">EASY</button>
