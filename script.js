@@ -138,5 +138,6 @@ start.addEventListener("click", function () {
   });
   confirmbutton.addEventListener("click", function() {
     infoaboutdificulties.innerHTML = ``;
+    menu.innerHTML = ``;
   });
 });
