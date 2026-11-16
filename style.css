@@ -4,6 +4,12 @@ h1 {
     color: rgb(0, 174, 255);
 }
 
+h2 {
+    font-size: 35px;
+    font-family: monospace;
+    color: rgb(0, 174, 255);
+}
+
 .center {
     text-align: center;
 }
