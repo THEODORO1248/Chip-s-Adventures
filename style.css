@@ -37,6 +37,9 @@ p{
     font-size: 23px;
     font-family: monospace;
     color: rgb(0, 174, 255);
+}
+
+h1, h2, p {
     text-shadow:
         2px 2px 0 black,
         -2px -2px 0 black,
