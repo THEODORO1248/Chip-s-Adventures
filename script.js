@@ -6,6 +6,7 @@ const ptbutton = document.getElementById("ptbutton");
 const esbutton = document.getElementById("esbutton");
 const confirmbutton = document.getElementById("confirmbutton");
 const subtitle = document.getElementById("subtitle");
+const canvas = document.getElementById("canvas");
 
 let lang = "en";
 
@@ -13,7 +14,7 @@ confirmbutton.style.display = "none";
 
 ptbutton.addEventListener("click", function() {
   start.textContent = "COMEÇAR";
-  subtitle.textContent = "selecione o idioma:"
+  subtitle.textContent = "Selecione o idioma:"
   lang = "ptbr";
 });
 
@@ -141,5 +142,6 @@ start.addEventListener("click", function () {
     menu.innerHTML = ``;
     confirmbutton.style.display = "none";
     subtitle.textContent = "";
+    canvas.style.display = "block";
   });
 });
