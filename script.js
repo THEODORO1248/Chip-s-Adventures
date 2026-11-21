@@ -6,7 +6,6 @@
   const esbutton = document.getElementById("esbutton");
   const confirmbutton = document.getElementById("confirmbutton");
   const subtitle = document.getElementById("subtitle");
-  const canvas = document.getElementById("canvas");
   
   let lang = "en";
   let difficulty = "";
@@ -163,6 +162,5 @@
       menu.innerHTML = ``;
       confirmbutton.style.display = "none";
       subtitle.textContent = "";
-      canvas.style.display = "block";
     });
   });
