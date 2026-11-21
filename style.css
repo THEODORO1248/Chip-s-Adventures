@@ -40,10 +40,15 @@ p{
 }
 
 #canvas {
+    #canvas {
     display: none;
-    margin: 20px auto;
-    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: white;
+}
 }
 
 h1, h2, p {
