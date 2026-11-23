@@ -7,7 +7,3 @@ const phaseToDo = {
     difficulty: difficulty
 }
 
-confirmbutton.addEventListener("click", function() {
-    phaseToDo.difficulty = difficulty;
-    canvas.style.display = "block";
-});

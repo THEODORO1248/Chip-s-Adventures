@@ -62,3 +62,11 @@ h1, h2, p {
         2px 0 0 black,
         -2px 0 0 black;
 }
+
+#phase101 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #3498db;
+    /* Garante que o círculo seja visível */
+}
