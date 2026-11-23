@@ -6,28 +6,39 @@
   const esbutton = document.getElementById("esbutton");
   const confirmbutton = document.getElementById("confirmbutton");
   const subtitle = document.getElementById("subtitle");
+  const buttonSelected = "rgb(0, 54, 105)";
   
   let lang = "en";
   let difficulty = "";
   
   confirmbutton.style.display = "none";
+  enbutton.style.backgroundColor = buttonSelected;
   
   ptbutton.addEventListener("click", function() {
     start.textContent = "COMEÇAR";
     subtitle.textContent = "Selecione o idioma:"
     lang = "ptbr";
+    enbutton.style.backgroundColor = "black";
+    ptbutton.style.backgroundColor = buttonSelected;
+    esbutton.style.backgroundColor = "black";
   });
   
   enbutton.addEventListener("click", function() {
     start.textContent = "START";
     subtitle.textContent = "Select language:";
     lang = "en";
+    enbutton.style.backgroundColor = buttonSelected;
+    ptbutton.style.backgroundColor = "black";
+    esbutton.style.backgroundColor = "black";
   });
   
   esbutton.addEventListener("click", function() {
     start.textContent = "EMPEZAR";
     subtitle.textContent = "Selecciona el idioma:";
     lang = "es";
+    enbutton.style.backgroundColor = "black";
+    ptbutton.style.backgroundColor = "black";
+    esbutton.style.backgroundColor = buttonSelected;
   });
   
   start.addEventListener("click", function () {
@@ -88,7 +99,7 @@
         `
       }
       confirmbutton.style.display = "inline-block";
-      easy.style.backgroundColor = "rgb(0, 74, 155)";
+      easy.style.backgroundColor = buttonSelected;
       medium.style.backgroundColor = "black";
       hard.style.backgroundColor = "black";
       impossible.style.backgroundColor = "black";
@@ -110,7 +121,7 @@
       }
       confirmbutton.style.display = "inline-block";
       easy.style.backgroundColor = "black";
-      medium.style.backgroundColor = "rgb(0, 74, 155)";
+      medium.style.backgroundColor = buttonSelected;
       hard.style.backgroundColor = "black";
       impossible.style.backgroundColor = "black";
       difficulty = "medium";
@@ -132,7 +143,7 @@
       confirmbutton.style.display = "inline-block";
       easy.style.backgroundColor = "black";
       medium.style.backgroundColor = "black";
-      hard.style.backgroundColor = "rgb(0, 74, 155)";
+      hard.style.backgroundColor = buttonSelected;
       impossible.style.backgroundColor = "black";
       difficulty = "hard";
     });
@@ -154,7 +165,7 @@
       easy.style.backgroundColor = "black";
       medium.style.backgroundColor = "black";
       hard.style.backgroundColor = "black";
-      impossible.style.backgroundColor = "rgb(0, 74, 155)";
+      impossible.style.backgroundColor = buttonSelected;
       difficulty = "impossible";
     });
     confirmbutton.addEventListener("click", function() {
