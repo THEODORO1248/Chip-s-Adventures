@@ -51,24 +51,30 @@
     }
     if(lang === "en") {
       menu.innerHTML = `
-      <button id = "easy">EASY</button>
-      <button id = "medium">MEDIUM</button>
-      <button id = "hard">HARD</button>
-      <button id = "impossible">IMPOSSIBLE</button>
+      <button id="easy">EASY</button>
+      <button id="medium">MEDIUM</button>
+      <button id="hard">HARD</button>
+      <button id="impossible">IMPOSSIBLE</button>
+      <br>
+      <button id="back">BACK</button>
       `
     } else if(lang === "ptbr") {
       menu.innerHTML = `
-      <button id = "easy">FÁCIL</button>
-      <button id = "medium">MÉDIO</button>
-      <button id = "hard">DIFÍCIL</button>
-      <button id = "impossible">IMPOSSÍVEL</button>
+      <button id="easy">FÁCIL</button>
+      <button id="medium">MÉDIO</button>
+      <button id="hard">DIFÍCIL</button>
+      <button id="impossible">IMPOSSÍVEL</button>
+      <br>
+      <button id="back">VOLTAR</button>
       `
     } else {
       menu.innerHTML = `
-      <button id = "easy">FÁCIL</button>
-      <button id = "medium">MEDIO</button>
-      <button id = "hard">DIFÍCIL</button>
-      <button id = "impossible">IMPOSIBLE</button>
+      <button id="easy">FÁCIL</button>
+      <button id="medium">MEDIO</button>
+      <button id="hard">DIFÍCIL</button>
+      <button id="impossible">IMPOSIBLE</button>
+      <br>
+      <button id="back">VOLVER</button>
       `
     }
     
@@ -76,7 +82,7 @@
     const medium = document.getElementById("medium");
     const hard = document.getElementById("hard");
     const impossible = document.getElementById("impossible");
-  
+    const back = document.getElementById("back");
   
     if(lang === "en") {
       confirmbutton.textContent = "CONFIRM";
@@ -167,6 +173,9 @@
       hard.style.backgroundColor = "black";
       impossible.style.backgroundColor = buttonSelected;
       difficulty = "impossible";
+    });
+    back.addEventListener("click", function() {
+      location.reload();
     });
     confirmbutton.addEventListener("click", function() {
       infoaboutdificulties.innerHTML = ``;
