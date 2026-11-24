@@ -7,6 +7,7 @@
   const confirmbutton = document.getElementById("confirmbutton");
   const subtitle = document.getElementById("subtitle");
   const buttonSelected = "rgb(0, 54, 105)";
+  const phasesselection = document.getElementById("phasesselection");
   
   let lang = "en";
   let difficulty = "";
@@ -182,5 +183,8 @@
       menu.innerHTML = ``;
       confirmbutton.style.display = "none";
       subtitle.textContent = "";
+      phasesselection.innerHTML = `
+      <button id="phase101"></button>
+      `;
     });
   });
