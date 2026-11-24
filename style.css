@@ -2,6 +2,7 @@ h1 {
     font-size: 55px;
     font-family: monospace;
     color: rgb(0, 174, 255);
+    text-shadow: 0 0 15px rgb(0, 174, 255);
 }
 
 h2 {
@@ -62,4 +63,9 @@ h1, h2, p {
         0 -2px 0 black,
         2px 0 0 black,
         -2px 0 0 black;
+}
+
+h1 {
+    text-shadow:
+        0 0 5px rgb(0, 174, 255);
 }
