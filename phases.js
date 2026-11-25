@@ -7,3 +7,13 @@ const phaseToDo = {
     difficulty: difficulty
 }
 
+confirmbutton.addEventListener("click", function() {
+    phasesselection.innerHTML = `
+    <button id="phase101"><strong>PHASE 1 MOON</strong></button>
+    `;
+    const phase101 = document.getElementById("phase101");
+    phase101.addEventListener("click", function() {
+    canvas.style.display = "block";
+    phase101.style.display = "none";
+});
+});

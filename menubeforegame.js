@@ -183,8 +183,5 @@
       menu.innerHTML = ``;
       confirmbutton.style.display = "none";
       subtitle.textContent = "";
-      phasesselection.innerHTML = `
-      <button id="phase101"></button>
-      `;
     });
   });

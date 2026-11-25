@@ -73,8 +73,11 @@ h1 {
 }
 
 #phase101 {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background-color: #3498db;
+    background-color: rgb(0, 54, 105);
+    position: absolute;
+    top: 250px;
+    left: 150px;
 }
